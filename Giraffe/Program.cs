@@ -10,9 +10,12 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            SimpleCalculator calculator = new SimpleCalculator();
-            double sumOfTwoDoubles = calculator.AddTwoDoubles();
-            Console.WriteLine($"The sum of these 2 values is: {sumOfTwoDoubles}\n");
+            //Calls SimpleCalculator method to console
+            //SimpleCalculator calculator = new SimpleCalculator();
+            //double sumOfTwoDoubles = calculator.AddTwoDoubles();
+            //Console.WriteLine($"The sum of these 2 values is: {sumOfTwoDoubles}\n");
+
+
         }
     }
 }

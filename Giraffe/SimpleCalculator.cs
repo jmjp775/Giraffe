@@ -14,6 +14,8 @@ namespace Giraffe
         /// <returns>SumOfTwoNumbers</returns>
         public double AddTwoDoubles()
         {
+            ///Summary
+            ///A simple calculator
             Console.Write("Enter a number: ");
              double num1 = Convert.ToDouble(Console.ReadLine());
 
