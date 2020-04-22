@@ -26,11 +26,12 @@ namespace Giraffe
             Console.Write("Enter a celebrity: ");
             celebrity = Console.ReadLine();
 
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I love  " + celebrity);
+            String Line1 = "Roses are " + color + ", ";
+            string Line2 = pluralNoun + " are blue" + ", ";
+            string Line3 = "I love " + celebrity + " ";
 
-            var ReturnMadLibsPhrase = 
+            var ReturnMadLibsPhrase = string.Concat(Line1, Line2, Line3);
+            return ReturnMadLibsPhrase;
             //Console.ReadLine();
         }
        

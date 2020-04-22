@@ -16,7 +16,9 @@ namespace Giraffe
             //Console.WriteLine($"The sum of these 2 values is: {sumOfTwoDoubles}\n");
 
             //Calls MadLibs method to console
-
+            MadLibs madLibsPhrase = new MadLibs();
+            string showMadLibs = madLibsPhrase.PlayMadLibs();
+            Console.WriteLine($"{showMadLibs}");
         }
     }
 }
