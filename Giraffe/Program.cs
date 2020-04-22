@@ -15,6 +15,7 @@ namespace Giraffe
             //double sumOfTwoDoubles = calculator.AddTwoDoubles();
             //Console.WriteLine($"The sum of these 2 values is: {sumOfTwoDoubles}\n");
 
+            //Calls MadLibs method to console
 
         }
     }
