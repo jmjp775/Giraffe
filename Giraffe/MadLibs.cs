@@ -26,7 +26,7 @@ namespace Giraffe
             Console.Write("Enter a celebrity: ");
             celebrity = Console.ReadLine();
 
-            String Line1 = "Roses are " + color + ", ";
+            string Line1 = "Roses are " + color + ", ";
             string Line2 = pluralNoun + " are blue" + ", ";
             string Line3 = "I love " + celebrity + " ";
 
