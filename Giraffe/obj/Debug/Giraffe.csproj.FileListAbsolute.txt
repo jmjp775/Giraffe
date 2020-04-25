@@ -12,3 +12,10 @@ C:\Josee\Giraffe2\Giraffe\obj\Debug\Giraffe.csprojAssemblyReference.cache
 C:\Josee\Giraffe2\Giraffe\obj\Debug\Giraffe.csproj.CoreCompileInputs.cache
 C:\Josee\Giraffe2\Giraffe\obj\Debug\Giraffe.exe
 C:\Josee\Giraffe2\Giraffe\obj\Debug\Giraffe.pdb
+C:\Josee\Giraffe\Giraffe\bin\Debug\Giraffe.exe.config
+C:\Josee\Giraffe\Giraffe\bin\Debug\Giraffe.exe
+C:\Josee\Giraffe\Giraffe\bin\Debug\Giraffe.pdb
+C:\Josee\Giraffe\Giraffe\obj\Debug\Giraffe.csprojAssemblyReference.cache
+C:\Josee\Giraffe\Giraffe\obj\Debug\Giraffe.csproj.CoreCompileInputs.cache
+C:\Josee\Giraffe\Giraffe\obj\Debug\Giraffe.exe
+C:\Josee\Giraffe\Giraffe\obj\Debug\Giraffe.pdb
