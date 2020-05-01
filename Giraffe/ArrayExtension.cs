@@ -20,5 +20,6 @@ namespace Giraffe
             //return the index of the element I want to display
             return Array.IndexOf(array, item);
         }
+
     }
 }

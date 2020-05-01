@@ -38,6 +38,9 @@ namespace Giraffe
                 Console.WriteLine("Element not found in array.\n");
             }
 
+            //Calls SayHiMethod
+            SayHiMethod.GetUserGreeting("Mike");
+
         }
     }
 }
