@@ -41,6 +41,9 @@ namespace Giraffe
             //Calls SayHiMethod
             SayHiMethod.GetUserGreeting("Mike");
 
+            //Use Math function to cube a number
+            Console.WriteLine(CubeANumber.ReturnCube(5));
+
         }
     }
 }
