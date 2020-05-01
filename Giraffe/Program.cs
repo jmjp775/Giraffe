@@ -38,6 +38,12 @@ namespace Giraffe
                 Console.WriteLine("Element not found in array.\n");
             }
 
+            //Create a method to say Hi to user
+            static void SayHi(string name)
+            {
+                Console.WriteLine("Hello " + name);
+            }
+
         }
     }
 }
