@@ -38,6 +38,12 @@ namespace Giraffe
                 Console.WriteLine("Element not found in array.\n");
             }
 
+            //Calls SayHiMethod
+            SayHiMethod.GetUserGreeting("Mike");
+
+            //Use Math function to cube a number
+            Console.WriteLine(CubeANumber.ReturnCube(5));
+
         }
     }
 }
