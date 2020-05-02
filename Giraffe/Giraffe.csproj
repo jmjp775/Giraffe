@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArrayExtension.cs" />
     <Compile Include="CubeANumber.cs" />
+    <Compile Include="IfStatementPractice.cs" />
     <Compile Include="MadLibs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
