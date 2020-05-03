@@ -45,12 +45,18 @@ namespace Giraffe
             //Console.WriteLine(CubeANumber.ReturnCube(5));
 
             //Calls IfStatementPractice.IfNotSundayThenWhat to display what exercises I should do
-            DayOfWeek day = DateTime.Now.DayOfWeek;
+            //DayOfWeek day = DateTime.Now.DayOfWeek;
 
-            IfStatementPractice adviceForToday = new IfStatementPractice();
+            //IfStatementPractice adviceForToday = new IfStatementPractice();
 
-            string displayTodaysAdvice = adviceForToday.IfNotSundayThenWhat();
-            Console.WriteLine($"{displayTodaysAdvice}\n");
+            //string displayTodaysAdvice = adviceForToday.IfNotSundayThenWhat();
+            //Console.WriteLine($"{displayTodaysAdvice}\n");
+
+            //Calls FindMaxValue.GetMaxValue(int, int) to display which number is bigger: num1 or num2
+            FindMaxValue whichNumIsGreater = new FindMaxValue();
+
+            int displayMaxValue = whichNumIsGreater.GetMaxValue(10, 21, 56);
+            Console.WriteLine($"{displayMaxValue} is the greater number \n");
 
         }
     }
