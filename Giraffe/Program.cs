@@ -15,9 +15,26 @@ namespace Giraffe
             //example of how to call a static method here: https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/static-methods-in-C-Sharp/
 
             //Calls SimpleCalculator method to console
-            //SimpleCalculator calculator = new SimpleCalculator();
-            //double sumOfTwoDoubles = calculator.AddTwoDoubles();
-            //Console.WriteLine($"The sum of these 2 values is: {sumOfTwoDoubles}\n");
+            try
+            {
+
+                Console.Write("Enter a number: ");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write("Enter an operator: ");
+                //passing op as a value-type parameter by value
+                string op = Console.ReadLine();
+
+                Console.Write("Enter another number: ");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
+            }
+             catch (System.ArgumentException e)
+            {
+                System.Console.WriteLine(e.Message);
+                throw new System.ArgumentException("Invalid operator. ", e);
+            }
 
             //Calls MadLibs method to console
             //MadLibs madLibsPhrase = new MadLibs();
@@ -53,10 +70,10 @@ namespace Giraffe
             //Console.WriteLine($"{displayTodaysAdvice}\n");
 
             //Calls FindMaxValue.GetMaxValue(int, int) to display which number is bigger: num1 or num2
-            FindMaxValue whichNumIsGreater = new FindMaxValue();
+            //FindMaxValue whichNumIsGreater = new FindMaxValue();
 
-            int displayMaxValue = whichNumIsGreater.GetMaxValue(10, 21, 56);
-            Console.WriteLine($"{displayMaxValue} is the greater number \n");
+            //int displayMaxValue = whichNumIsGreater.GetMaxValue(10, 21, 56);
+            //Console.WriteLine($"{displayMaxValue} is the greater number \n");
 
         }
     }

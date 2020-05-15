@@ -9,24 +9,31 @@ namespace Giraffe
     public class SimpleCalculator
     {
         /// <summary>
-        /// Method that adds to numbers of type double.
+        /// Method that calculates two numbers of type double, depending on what the operator is.
         /// </summary>
-        /// <returns>SumOfTwoNumbers</returns>
-        public double AddTwoDoubles()
+        /// <returns>result</returns>
+        public static double CalculateTwoNumbers(double firstNum, string whichOperator, double secondNum)
         {
-            ///Summary
-            ///A simple calculator
-            Console.Write("Enter a number: ");
-             double num1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter another number: ");
-             double num2 = Convert.ToDouble(Console.ReadLine());
-
-            var SumOfTwoNumbers = (num1 + num2);
-            return SumOfTwoNumbers;
-
-            //Console.ReadLine();
+                if (whichOperator == "+")
+                {
+                    var result = (firstNum + secondNum);
+                    return result;
+                }
+                else if (whichOperator == "-")
+                {
+                    var result = (firstNum - secondNum);
+                    return result;
+                }
+                else if (whichOperator == "/")
+                {
+                    var result = (firstNum / secondNum);
+                    return result;
+                }
+                else 
+                {
+                    var result = (firstNum * secondNum);
+                    return result;
+                }
         }
-        
     }
 }
