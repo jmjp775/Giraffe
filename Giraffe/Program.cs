@@ -17,14 +17,18 @@ namespace Giraffe
             //Calls SimpleCalculator method to console
             try
             {
-                SimpleCalculator calculator = new SimpleCalculator();
-                double typeOfOperator = calculator.CalculateTwoNumbers();
+
+                Console.Write("Enter a number: ");
+                double num1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Enter an operator: ");
+                //passing op as a value-type parameter by value
                 string op = Console.ReadLine();
 
+                Console.Write("Enter another number: ");
+                double num2 = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine($"The result of these 2 values is: {typeOfOperator}\n");
+                Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
             }
              catch (System.ArgumentException e)
             {

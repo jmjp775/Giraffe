@@ -12,34 +12,26 @@ namespace Giraffe
         /// Method that calculates two numbers of type double, depending on what the operator is.
         /// </summary>
         /// <returns>result</returns>
-        public double CalculateTwoNumbers(string op)
+        public static double CalculateTwoNumbers(double firstNum, string whichOperator, double secondNum)
         {
-                Console.Write("Enter a number: ");
-                double num1 = Convert.ToDouble(Console.ReadLine());
-
-                Console.Write("Enter an operator: ");
-                string op = Console.ReadLine();
-
-                Console.Write("Enter another number: ");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                if (op == "+")
+                if (whichOperator == "+")
                 {
-                    var result = (num1 + num2);
+                    var result = (firstNum + secondNum);
                     return result;
                 }
-                else if (op == "-")
+                else if (whichOperator == "-")
                 {
-                    var result = (num1 - num2);
+                    var result = (firstNum - secondNum);
                     return result;
                 }
-                else if (op == "/")
+                else if (whichOperator == "/")
                 {
-                    var result = (num1 / num2);
+                    var result = (firstNum / secondNum);
                     return result;
                 }
                 else 
                 {
-                    var result = (num1 * num2);
+                    var result = (firstNum * secondNum);
                     return result;
                 }
         }
