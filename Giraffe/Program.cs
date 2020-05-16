@@ -13,12 +13,10 @@ namespace Giraffe
         static void Main(string[] args)
         {
             //example of how to call a static method here: https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/static-methods-in-C-Sharp/
-
+            //a url that explains regular expressions basics: https://www.c-sharpcorner.com/UploadFile/puranindia/regular-expressions-in-C-Sharp/
             //Calls SimpleCalculator method to console
-            try
-            {
 
-                Console.Write("Enter a number: ");
+            Console.Write("Enter a number: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Enter an operator: ");
@@ -29,12 +27,7 @@ namespace Giraffe
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
-            }
-             catch (System.ArgumentException e)
-            {
-                System.Console.WriteLine(e.Message);
-                throw new System.ArgumentException("Invalid operator. ", e);
-            }
+         
 
             //Calls MadLibs method to console
             //MadLibs madLibsPhrase = new MadLibs();
