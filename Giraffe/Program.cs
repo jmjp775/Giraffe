@@ -16,7 +16,9 @@ namespace Giraffe
             //a url that explains regular expressions basics: https://www.c-sharpcorner.com/UploadFile/puranindia/regular-expressions-in-C-Sharp/
             //Calls SimpleCalculator method to console
 
-            Console.Write("Enter a number: ");
+            try
+            {
+                Console.Write("Enter a number: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Enter an operator: ");
@@ -27,7 +29,20 @@ namespace Giraffe
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
-         
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine("You forgot to enter a value: ", e.Message);
+            }
+            catch (SystemException e)
+            {
+                Console.WriteLine("You're entry is in the wrong format", e.Message);
+            }
+            //catch (ArgumentOutOfRangeException e)
+            //{
+            //    Console.WriteLine("You're entry is invalid: ", e.Message);
+            //}
+
 
             //Calls MadLibs method to console
             //MadLibs madLibsPhrase = new MadLibs();

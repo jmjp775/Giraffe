@@ -14,49 +14,40 @@ namespace Giraffe
         /// <returns>result</returns>
         public static double CalculateTwoNumbers(double firstNum, string whichOperator, double secondNum)
         {
-            //Console.Write("Enter a number: ");
-            //double firstNum = Convert.ToDouble(Console.ReadLine());
-
-
-
-            //check that user entered a valid operator. If not, they need to re-enter until they enter a valid operator.
-            //while (whichOperator != "+" || whichOperator != "-" || whichOperator != "/" || whichOperator != "*")
-            //{
-                //Console.WriteLine("You entered an invalid operator. Please try again: ");
-                //whichOperator = Console.ReadLine();
-
-                if (whichOperator == "+")
+            string checkOperator = whichOperator;
+            string[] operatorArray = { "+", "-", "*", "/" };
+            foreach (string x in operatorArray)
+            {
+                while (!checkOperator.Contains(x))
                 {
-                    var result = (firstNum + secondNum);
-                    return result;
+                    Console.WriteLine("{0} is an invalid operator.", checkOperator);
+                    Console.Write("Re-enter a valid operator: ");
+                    string checkNewOperator = Console.ReadLine();
+                    checkOperator = checkNewOperator;
                 }
-                else if (whichOperator == "-")
-                {
-                    var result = (firstNum - secondNum);
-                    return result;
-                }
-                else if (whichOperator == "/")
-                {
-                    var result = (firstNum / secondNum);
-                    return result;
-                }
-                else
-                {
-                    var result = (firstNum * secondNum);
-                    return result;
-                }
-            //}
+            }
 
 
-            
-            
-            
-
-            // catch (System.ArgumentException e)
-            //{
-            //    System.Console.WriteLine(e.Message);
-            //    throw new System.ArgumentException("Invalid operator. ", e);
-            //}
+            if (whichOperator == "+")
+            {
+                var result = (firstNum + secondNum);
+                return result;
+            }
+            else if (whichOperator == "-")
+            {
+                var result = (firstNum - secondNum);
+                return result;
+            }
+            else if (whichOperator == "/")
+            {
+                var result = (firstNum / secondNum);
+                return result;
+            }
+            else
+            {
+                var result = (firstNum * secondNum);
+                return result;
+            }
         }
     }
 }
