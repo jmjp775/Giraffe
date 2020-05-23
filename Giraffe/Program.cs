@@ -30,11 +30,17 @@ namespace Giraffe
 
                 Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
             }
-             catch (System.ArgumentException e)
+            //Most specific 
+            catch (ArgumentException e)
             {
-                System.Console.WriteLine(e.Message);
-                throw new System.ArgumentException("Invalid operator. ", e);
+                Console.WriteLine("{0} first exception was caught " + e.Message);
             }
+            //Least specific
+            catch (FormatException e)
+            {
+                Console.WriteLine("{0} Second exception was caught " + e.Message);
+            }
+
 
             //Calls MadLibs method to console
             //MadLibs madLibsPhrase = new MadLibs();

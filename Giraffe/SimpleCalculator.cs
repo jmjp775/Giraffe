@@ -29,10 +29,14 @@ namespace Giraffe
                     var result = (firstNum / secondNum);
                     return result;
                 }
-                else 
+                else if (whichOperator == "*")
                 {
                     var result = (firstNum * secondNum);
                     return result;
+                }
+                else
+                {
+                throw new ArgumentException();
                 }
         }
     }
