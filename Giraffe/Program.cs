@@ -15,31 +15,30 @@ namespace Giraffe
             //example of how to call a static method here: https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/static-methods-in-C-Sharp/
 
             //Calls SimpleCalculator method to console
-            try
-            {
+            //try
+            //{
+            //    Console.Write("Enter a number: ");
+            //    double num1 = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Enter a number: ");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+            //    Console.Write("Enter an operator: ");
+            //    //passing op as a value-type parameter by value
+            //    string op = Console.ReadLine();
 
-                Console.Write("Enter an operator: ");
-                //passing op as a value-type parameter by value
-                string op = Console.ReadLine();
+            //    Console.Write("Enter another number: ");
+            //    double num2 = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Enter another number: ");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-
-                Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
-            }
-            //Most specific 
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("{0} first exception was caught " + e.Message);
-            }
-            //Least specific
-            catch (FormatException e)
-            {
-                Console.WriteLine("{0} Second exception was caught " + e.Message);
-            }
+            //    Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
+            //}
+            ////Most specific 
+            //catch (ArgumentException e)
+            //{
+            //    Console.WriteLine("{0} first exception was caught " + e.Message);
+            //}
+            ////Least specific
+            //catch (FormatException e)
+            //{
+            //    Console.WriteLine("{0} Second exception was caught " + e.Message);
+            //}
 
 
             //Calls MadLibs method to console
@@ -81,6 +80,16 @@ namespace Giraffe
             //int displayMaxValue = whichNumIsGreater.GetMaxValue(10, 21, 56);
             //Console.WriteLine($"{displayMaxValue} is the greater number \n");
 
+            //Calls SwitchStatementWhichDayIsIt.GetDay(int dayNum) to display which day of the week it is
+            SwitchStatementWhichDayIsIt whatDayIsIt = new SwitchStatementWhichDayIsIt();
+
+            //Console.WriteLine(whatDayIsIt.GetDay(10));
+            Console.Write("Enter a number from 0 to 7 : ");
+            int numberFromZeroToSeven = Convert.ToInt32(Console.ReadLine()); 
+
+            string displayWhichDayIsAssociatedWithNumber = whatDayIsIt.GetDay(numberFromZeroToSeven);
+
+            Console.WriteLine($"{numberFromZeroToSeven} equals {displayWhichDayIsAssociatedWithNumber}");
         }
     }
 }

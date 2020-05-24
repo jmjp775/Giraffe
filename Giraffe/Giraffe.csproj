@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SayHiMethod.cs" />
     <Compile Include="SimpleCalculator.cs" />
+    <Compile Include="SwitchStatementWhichDayIsIt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
