@@ -81,15 +81,21 @@ namespace Giraffe
             //Console.WriteLine($"{displayMaxValue} is the greater number \n");
 
             //Calls SwitchStatementWhichDayIsIt.GetDay(int dayNum) to display which day of the week it is
-            SwitchStatementWhichDayIsIt whatDayIsIt = new SwitchStatementWhichDayIsIt();
+            // SwitchStatementWhichDayIsIt whatDayIsIt = new SwitchStatementWhichDayIsIt();
 
-            //Console.WriteLine(whatDayIsIt.GetDay(10));
-            Console.Write("Enter a number from 0 to 7 : ");
-            int numberFromZeroToSeven = Convert.ToInt32(Console.ReadLine()); 
+            // Console.Write("Enter a number from 0 to 7 : ");
+            // int numberFromZeroToSeven = Convert.ToInt32(Console.ReadLine());
 
-            string displayWhichDayIsAssociatedWithNumber = whatDayIsIt.GetDay(numberFromZeroToSeven);
+            // string displayWhichDayIsAssociatedWithNumber = whatDayIsIt.GetDay(numberFromZeroToSeven);
 
-            Console.WriteLine($"{numberFromZeroToSeven} equals {displayWhichDayIsAssociatedWithNumber}");
+            // Console.WriteLine($"{numberFromZeroToSeven} equals {displayWhichDayIsAssociatedWithNumber}");
+
+            //Calls IncrementWhileLoop.IncrementInt(int numVal) to display how it increments the value 
+            //from 1 to 5 and exits the loop when it reaches 5
+            int numVal = 1;
+            IncrementWhileLoop incrementValue = new IncrementWhileLoop();
+
+            int displayEachValue = incrementValue.IncrementInt(numVal);
         }
     }
 }
