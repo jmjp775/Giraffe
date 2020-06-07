@@ -47,6 +47,7 @@
     <Compile Include="CubeANumber.cs" />
     <Compile Include="FindMaxValue.cs" />
     <Compile Include="IfStatementPractice.cs" />
+    <Compile Include="IncrementWhileLoop.cs" />
     <Compile Include="MadLibs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
