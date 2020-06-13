@@ -96,6 +96,12 @@ namespace Giraffe
             IncrementWhileLoop incrementValue = new IncrementWhileLoop();
 
             int displayEachValue = incrementValue.IncrementInt(numVal);
+
+            //Calls GuessingGame.GetSecretWord(string secretWord) to display whether 
+            //the user's guess matches the secret word.
+            string secretWord = "Giraffe";
+            GuessingGame guessSecretWord = new GuessingGame();
+
         }
     }
 }
