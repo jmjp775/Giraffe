@@ -12,9 +12,12 @@ namespace Giraffe
         {
             string guess;
 
-            while(guess != secretWord)
+            Console.WriteLine("Enter a guess: ");
+            guess = Console.ReadLine();
+
+            while (!guess.Equals(secretWord, StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine("Enter a guess: ");
+                Console.WriteLine($"Your secret word {guess} is incorrect. Take another guess: ");
                 guess = Console.ReadLine();
             }
             return guess;
