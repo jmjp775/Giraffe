@@ -91,11 +91,20 @@ namespace Giraffe
             // Console.WriteLine($"{numberFromZeroToSeven} equals {displayWhichDayIsAssociatedWithNumber}");
 
             //Calls IncrementWhileLoop.IncrementInt(int numVal) to display how it increments the value 
-            //from 1 to 5 and exits the loop when it reaches 5
-            int numVal = 1;
-            IncrementWhileLoop incrementValue = new IncrementWhileLoop();
+            ////from 1 to 5 and exits the loop when it reaches 5
+            //int numVal = 1;
+            //IncrementWhileLoop incrementValue = new IncrementWhileLoop();
+            //_ = incrementValue.IncrementInt(numVal);
 
-            int displayEachValue = incrementValue.IncrementInt(numVal);
+
+            //Calls GuessingGame.GetSecretWord(string secretWord) to display whether 
+            //the user's guess matches the secret word.
+            string secretWord = "Giraffe";
+            GuessingGame guessSecretWord = new GuessingGame();
+            string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
+
+            Console.WriteLine($"The secret word is {displaySecretWord}");
+
         }
     }
 }
