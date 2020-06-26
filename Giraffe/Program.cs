@@ -99,11 +99,11 @@ namespace Giraffe
 
             //Calls GuessingGame.GetSecretWord(string secretWord) to display whether 
             //the user's guess matches the secret word.
-            string secretWord = "Giraffe";
-            GuessingGame guessSecretWord = new GuessingGame();
-            string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
+            //string secretWord = "Giraffe";
+            //GuessingGame guessSecretWord = new GuessingGame();
+            //string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
 
-            Console.WriteLine($"The secret word is {displaySecretWord}");
+            //Console.WriteLine($"The secret word is {displaySecretWord}");
 
         }
     }

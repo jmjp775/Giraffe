@@ -36,8 +36,8 @@ namespace Giraffe
                 }
                 else
                 {
-                throw new ArgumentException();
-                }
+                    throw new ArgumentException();
+                }           
         }
     }
 }
