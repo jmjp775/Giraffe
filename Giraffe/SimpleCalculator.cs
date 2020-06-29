@@ -14,6 +14,8 @@ namespace Giraffe
         /// <returns>result</returns>
         public static double CalculateTwoNumbers(double firstNum, string whichOperator, double secondNum)
         {
+                //this function needs to include the user prompts and try-catch here,
+                //instead of calling it from the Main
                 if (whichOperator == "+")
                 {
                     var result = (firstNum + secondNum);
@@ -36,7 +38,7 @@ namespace Giraffe
                 }
                 else
                 {
-                    throw new ArgumentException();
+                throw new ArgumentException("The operator is invalid. Please enter a valid operator(+ or - or / or *): ", whichOperator);
                 }           
         }
     }

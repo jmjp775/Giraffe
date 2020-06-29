@@ -31,10 +31,11 @@ namespace Giraffe.Test
         //    double doubleNum2 = 50.5;
         //    string invalidOperator = "plus";
         //    //Act
-        //    double actualResult = SimpleCalculator.CalculateTwoNumbers(doubleNum1, invalidOperator, doubleNum2);
-
+        //    //double actualResult = SimpleCalculator.CalculateTwoNumbers(doubleNum1, invalidOperator, doubleNum2);
+        //    //Action act = () => SimpleCalculator.CalculateTwoNumbers();
         //    //Assert
-        //    Assert.Throws<ArgumentException>(() => actualResult);
+        //    //var exception = Assert.Throws<ArgumentException>(act);
+        //    Assert.Equal("{0} first exception was caught ", exception.Message);
 
         //}
     }
