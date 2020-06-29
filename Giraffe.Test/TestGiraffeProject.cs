@@ -23,20 +23,20 @@ namespace Giraffe.Test
             Assert.Equal(expectedResult, actualResult);
         }
 
-        [Fact]
-        public void SimpleCalculatorFailWithInvalidOperator()
-        {
-            //Arrange
-            double doubleNum1 = 3.5;
-            double doubleNum2 = 50.5;
-            string invalidOperator = "plus";
-            //Act
-            //double actualResult = SimpleCalculator.CalculateTwoNumbers(doubleNum1, invalidOperator, doubleNum2);
-            //Action act = () => SimpleCalculator.CalculateTwoNumbers();
-            //Assert
-            //var exception = Assert.Throws<ArgumentException>(act);
-            Assert.Equal("{0} first exception was caught ", exception.Message);
+        //[Fact]
+        //public void SimpleCalculatorFailWithInvalidOperator()
+        //{
+        //    //Arrange
+        //    double doubleNum1 = 3.5;
+        //    double doubleNum2 = 50.5;
+        //    string invalidOperator = "plus";
+        //    //Act
+        //    //double actualResult = SimpleCalculator.CalculateTwoNumbers(doubleNum1, invalidOperator, doubleNum2);
+        //    //Action act = () => SimpleCalculator.CalculateTwoNumbers();
+        //    //Assert
+        //    //var exception = Assert.Throws<ArgumentException>(act);
+        //    Assert.Equal("{0} first exception was caught ", exception.Message);
 
-        }
+        //}
     }
 }
