@@ -38,8 +38,11 @@ namespace Giraffe
                 }
                 else
                 {
-                throw new ArgumentException("The operator is invalid. Please enter a valid operator(+ or - or / or *): ", whichOperator);
-                }           
+                //throw new ArgumentException("The operator is invalid (+ or - or / or *): ", whichOperator);
+                //Console.WriteLine("The operator is invalid (+ or - or / or *): ");
+                throw new ArgumentException();
+
+            }
         }
     }
 }
