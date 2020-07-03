@@ -15,30 +15,30 @@ namespace Giraffe
             //example of how to call a static method here: https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/static-methods-in-C-Sharp/
 
             //Calls SimpleCalculator method to console
-            try
-            {
-                Console.Write("Enter a number: ");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+            //try
+            //{
+            //    Console.Write("Enter a number: ");
+            //    double num1 = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Enter an operator: ");
-                //passing op as a value-type parameter by value
-                    string op = Console.ReadLine();
+            //    Console.Write("Enter an operator: ");
+            //    //passing op as a value-type parameter by value
+            //        string op = Console.ReadLine();
 
-                Console.Write("Enter another number: ");
-                double num2 = Convert.ToDouble(Console.ReadLine());
+            //    Console.Write("Enter another number: ");
+            //    double num2 = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
-            }
-            //Most specific 
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("First exception was caught " + e.Message);
-            }
-            //Least specific
-            catch (FormatException e)
-            {
-                Console.WriteLine("Second exception was caught " + e.Message);
-            }
+            //    Console.WriteLine(SimpleCalculator.CalculateTwoNumbers(num1, op, num2));
+            //}
+            ////Most specific 
+            //catch (ArgumentException e)
+            //{
+            //    Console.WriteLine("First exception was caught " + e.Message);
+            //}
+            ////Least specific
+            //catch (FormatException e)
+            //{
+            //    Console.WriteLine("Second exception was caught " + e.Message);
+            //}
 
 
             //Calls MadLibs method to console
@@ -99,11 +99,11 @@ namespace Giraffe
 
             //Calls GuessingGame.GetSecretWord(string secretWord) to display whether 
             //the user's guess matches the secret word.
-            //string secretWord = "Giraffe";
-            //GuessingGame guessSecretWord = new GuessingGame();
-            //string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
+            string secretWord = "Giraffe";
+            GuessingGame guessSecretWord = new GuessingGame();
+            string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
 
-            //Console.WriteLine($"The secret word is {displaySecretWord}");
+            Console.WriteLine($"Your guess was {displaySecretWord}");
 
         }
     }
