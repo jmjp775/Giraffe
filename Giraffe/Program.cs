@@ -103,7 +103,7 @@ namespace Giraffe
             GuessingGame guessSecretWord = new GuessingGame();
             string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
 
-            //Console.WriteLine($"The secret word is {displaySecretWord}");
+            Console.WriteLine($"Your guess was {displaySecretWord}");
 
         }
     }
