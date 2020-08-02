@@ -99,12 +99,16 @@ namespace Giraffe
 
             //Calls GuessingGame.GetSecretWord(string secretWord) to display whether 
             //the user's guess matches the secret word.
-            string secretWord = "Giraffe";
-            GuessingGame guessSecretWord = new GuessingGame();
-            string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
+            //string secretWord = "Giraffe";
+            //GuessingGame guessSecretWord = new GuessingGame();
+            //string displaySecretWord = guessSecretWord.GetSecretWord(secretWord);
 
-            Console.WriteLine($"Your guess was {displaySecretWord}");
+            //Console.WriteLine($"Your guess was {displaySecretWord}");
 
+            //Calls ForLoop.GetLuckyNumbers
+            int[] luckyNumbersArray = { 4, 8, 15, 23, 45, 58 };
+            ForLoop.GetLengthOfArray(luckyNumbersArray);
+            Console.WriteLine();
         }
     }
 }
