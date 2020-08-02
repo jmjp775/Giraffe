@@ -106,16 +106,9 @@ namespace Giraffe
             //Console.WriteLine($"Your guess was {displaySecretWord}");
 
             //Calls ForLoop.GetLuckyNumbers
-            int[] luckyNumbersArray = new int[] { 4, 8, 15, 23, 45, 58 };
-            //int[] luckyNumbersArray = { 4, 8, 15, 23, 45, 58 };
-
-            Console.WriteLine(ForLoop.GetLuckyNumbers(luckyNumbersArray));
-
-
-            //ForLoop arrayLuckyNumbers = new ForLoop();
-
-
-
+            int[] luckyNumbersArray = { 4, 8, 15, 23, 45, 58 };
+            ForLoop.GetLengthOfArray(luckyNumbersArray);
+            Console.WriteLine();
         }
     }
 }

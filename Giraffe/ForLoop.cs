@@ -6,34 +6,22 @@ using System.Threading.Tasks;
 
 namespace Giraffe
 {
-    public class ForLoop
+    public static class ForLoop
     {
-        public static int[] GetLuckyNumbers(int array)
+        /// <summary>
+        /// try this example: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/passing-arrays-as-arguments
+        /// use this section: ChangeArray(weekDays);
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        public static void GetLengthOfArray(int[] array)
         {
-            var result = new int[array];
-
             for (int i = 0; i < array.Length; i++)
             {
-                result[i] = array;
-                
-                //digitsArray.Add(i);
-                //int[] arr = digitsArray.ToArray();
-                //return arr;
-                //Console.WriteLine(DisplayEachArray);
-
-                //Console.WriteLine(array[i]);
-
-                //int displayArray = array[i];
-                //return displayArray;
-                //return array[i];
-                //arrayNumbers = Console.WriteLine(array[i]);
-
-                //int[] arrayNumbers = new array[i];
-
-                //return arrayNumbers;
+                Console.WriteLine(array[i]);
             }
-            return result;
-
         }
     }
 }
